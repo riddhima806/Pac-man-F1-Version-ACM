@@ -9,11 +9,10 @@ pygame.mixer.init()
 
 pygame.time.Clock()
 
-ghost = pygame.mixer.Sound("./sound/Ghost.mp3")
-death = pygame.mixer.Sound("./sound/Death.mp3")
-fruit = pygame.mixer.Sound("./sound/Fruit.mp3")
-intro = pygame.mixer.Sound("./sound/Intro.mp3")
-
+ghost = pygame.mixer.Sound("Shreyaa/sound/Ghost.mp3")
+death = pygame.mixer.Sound("Shreyaa/sound/Death.mp3")
+fruit = pygame.mixer.Sound("Shreyaa/sound/Fruit.mp3")
+intro = pygame.mixer.Sound("Shreyaa/sound/Intro.mp3")
 window = pygame.display.set_mode((700, 700))
 WIDTH = 800
 HEIGHT = 850
@@ -30,23 +29,23 @@ PI = math.pi
 
 # Load car images for player (Pac-Man replacement) - directional race cars
 player_images = []
-player_images.append(pygame.transform.scale(pygame.image.load('assets/raceCarRed_E.png'), (45, 45)))  # Right
-player_images.append(pygame.transform.scale(pygame.image.load('assets/raceCarRed_W.png'), (45, 45)))  # Left
-player_images.append(pygame.transform.scale(pygame.image.load('assets/raceCarRed_N.png'), (45, 45)))  # Up
-player_images.append(pygame.transform.scale(pygame.image.load('assets/raceCarRed_S.png'), (45, 45)))  # Down
+player_images.append(pygame.transform.scale(pygame.image.load('Shreyaa/assets/raceCarRed_E.png'), (45, 45)))  # Right
+player_images.append(pygame.transform.scale(pygame.image.load('Shreyaa/assets/raceCarRed_W.png'), (45, 45)))  # Left
+player_images.append(pygame.transform.scale(pygame.image.load('Shreyaa/assets/raceCarRed_N.png'), (45, 45)))  # Up
+player_images.append(pygame.transform.scale(pygame.image.load('Shreyaa/assets/raceCarRed_S.png'), (45, 45)))  # Down
 
 # Load flag images for ghosts (using the numbered images 1, 2, 3, 4) - smaller size
-blinky_img = pygame.transform.scale(pygame.image.load('assets/1.png'), (30, 30))
-pinky_img = pygame.transform.scale(pygame.image.load('assets/2.png'), (30, 30))
-inky_img = pygame.transform.scale(pygame.image.load('assets/3.png'), (30, 30))
-clyde_img = pygame.transform.scale(pygame.image.load('assets/4.png'), (30, 30))
-spooked_img = pygame.transform.scale(pygame.image.load('assets/1.png'), (30, 30))
-dead_img = pygame.transform.scale(pygame.image.load('assets/1.png'), (30, 30))
+blinky_img = pygame.transform.scale(pygame.image.load('Shreyaa/assets/1.png'), (30, 30))
+pinky_img = pygame.transform.scale(pygame.image.load('Shreyaa/assets/2.png'), (30, 30))
+inky_img = pygame.transform.scale(pygame.image.load('Shreyaa/assets/3.png'), (30, 30))
+clyde_img = pygame.transform.scale(pygame.image.load('Shreyaa/assets/4.png'), (30, 30))
+spooked_img = pygame.transform.scale(pygame.image.load('Shreyaa/assets/1.png'), (30, 30))
+dead_img = pygame.transform.scale(pygame.image.load('Shreyaa/assets/1.png'), (30, 30))
 
 # Create tire images for power pellets (S, M, H)
-tire_s_img = pygame.transform.scale(pygame.image.load("assets/red.png"), (20, 20))
-tire_m_img = pygame.transform.scale(pygame.image.load("assets/yellow.png"), (20, 20))
-tire_h_img = pygame.transform.scale(pygame.image.load("assets/white.png"), (20, 20))
+tire_s_img = pygame.transform.scale(pygame.image.load("Shreyaa/assets/red.png"), (20, 20))
+tire_m_img = pygame.transform.scale(pygame.image.load("Shreyaa/assets/yellow.png"), (20, 20))
+tire_h_img = pygame.transform.scale(pygame.image.load("Shreyaa/assets/white.png"), (20, 20))
 
 # Power-up states
 speed_boost = False
